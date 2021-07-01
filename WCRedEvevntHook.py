@@ -36,19 +36,24 @@ if (ObjC.available)
                 console.log("openred_dict:"+ openred_dict);
 
                 //call function
-                var friendlyObjc_getClass = new NativeFunction(Module.findExportByName('WeChat','objc_getClass'),'pointer',['pointer']);
-                var chunk = Memory.alloc(22);
+                //ObjC.classes.WCRedEnvelopesLogicMgr.alloc.ReceiverQueryRedEnvelopesRequest(receiver_dict);
+                var WCRedEnvelopesLogicMgr = ObjC.classes.WCRedEnvelopesLogicMgr;
+                my_ReceiverQueryRedEnvelopesRequest = ObjC.chooseSync(WCRedEnvelopesLogicMgr)[0];
+                my_ReceiverQueryRedEnvelopesRequest["- ReceiverQueryRedEnvelopesRequest:"](receiver_dict);
+                
+               // var friendlyObjc_getClass = new NativeFunction(Module.findExportByName('WeChat','objc_getClass'),'pointer',['pointer']);
+                //var chunk = Memory.alloc(22);
                 //console.log(chunk);
-                Memory.writeUtf8String(chunk, "WCRedEnvelopesLogicMgr");
-                console.log(Memory.readUtf8String(chunk,22));
-                var p = Memory.alloc(Process.pointerSize);
+                //Memory.writeUtf8String(chunk, "WCRedEnvelopesLogicMgr");
+                //console.log(Memory.readUtf8String(chunk,22));
+                //var p = Memory.alloc(Process.pointerSize);
 
-                Memory.writeUInt(p, 0);
+                //Memory.writeUInt(p, 0);
 
-                var Class = friendlyObjc_getClass(Memory.writeUtf8String(chunk, "WCRedEnvelopesLogicMgr"),p);
+                //var Class = friendlyObjc_getClass(Memory.writeUtf8String(chunk, "WCRedEnvelopesLogicMgr"),p);
 
-                var getService = ObjC.classes.MMServiceCenter.alloc().init();
-                getService["- getService:"](Class);
+                //var getService = ObjC.classes.MMServiceCenter.alloc().init();
+                //getService["- getService:"](Class);
 
 
                 //var ReceiverQueryRedEnvelopesRequest = ObjC.classes.WCRedEnvelopesLogicMgr.alloc().init();
