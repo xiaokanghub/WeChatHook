@@ -15,9 +15,5 @@ Tutorials:
   
   5.open WeChat and run script
   
-Issue:
 
-  ‘id logicMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("WCRedEnvelopesLogicMgr")];‘
-  
-  I don't have a way to implement the OC code above with Frida yet,so that means the script is not really automately
   If you have any idear to implement this code and please commit it,thank you!!!
