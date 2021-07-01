@@ -40,7 +40,7 @@ if (ObjC.available)
                 var WCRedEnvelopesLogicMgr = ObjC.classes.WCRedEnvelopesLogicMgr;
                 my_ReceiverQueryRedEnvelopesRequest = ObjC.chooseSync(WCRedEnvelopesLogicMgr)[0];
                 my_ReceiverQueryRedEnvelopesRequest["- ReceiverQueryRedEnvelopesRequest:"](receiver_dict);
-                
+                my_ReceiverQueryRedEnvelopesRequest["- OpenRedEnvelopesRequest:"](openred_dict);
                // var friendlyObjc_getClass = new NativeFunction(Module.findExportByName('WeChat','objc_getClass'),'pointer',['pointer']);
                 //var chunk = Memory.alloc(22);
                 //console.log(chunk);
