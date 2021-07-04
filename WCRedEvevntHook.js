@@ -88,8 +88,8 @@ if (ObjC.available)
            receiver_dict.setObject_forKey_(this["msgtype"],"msgType");
            receiver_dict.setObject_forKey_(originalUrl,"nativeUrl");
            receiver_dict.setObject_forKey_(this["sendid"],"sendId");
-           openred_dict.setObject_forKey_("https://wx.qlogo.cn/mmhead/ver_1/eDB9bF42cxyLCFib3nUjJeoWy2gibvtv1via87MAPTHEztYicBFjpiaCXEfA4BYh8cxt0dbef2o72JCaDQOPkWt2XVpmJBbjCXSib5ziavz0ssXVcY/132","headImg");
-           openred_dict.setObject_forKey_("xiaokang","nickName");
+           openred_dict.setObject_forKey_("https://wx.qlogo.cn/mmhead/ver_1/??/132","headImg");
+           openred_dict.setObject_forKey_("hacker","nickName");
            openred_dict.setObject_forKey_(originalUrl,"nativeUrl");
            openred_dict.setObject_forKey_(this["channelid"],"channelId");
            openred_dict.setObject_forKey_(this["msgtype"],"msgType");
